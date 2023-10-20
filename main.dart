@@ -25,7 +25,11 @@ class Loader extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircularProgressIndicator(),
+            CircularProgressIndicator(
+              backgroundColor: Colors.red,
+              valueColor: AlwaysStoppedAnimation(Colors.black),
+              strokeWidth: 10,
+            ),
             SizedBox(
               height: 1,
             ),
